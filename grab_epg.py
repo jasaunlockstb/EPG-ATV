@@ -44,9 +44,9 @@ for source in config["sources"]:
 
                         # 4️⃣ TAMBAH / GANTI AKHIRAN
                         if re.search(r"\([^)]*\)$", text):
-                            text = re.sub(r"\([^)]*\)$", "(SKUYY TV)", text)
+                            text = re.sub(r"\([^)]*\)$", "(ATV)", text)
                         else:
-                            text = f"{text} (SKUYY TV)"
+                            text = f"{text} (ATV)"
 
                         title.text = text
 
