@@ -26,6 +26,18 @@ jobs:
       - name: Grab EPG
         run: python grab_epg.py
 
+      - name: Debug - List files
+        run: ls -la
+
+      - name: Debug - Check if file exists
+        run: |
+          if [ -f "epgtvku.xml" ]; then
+            echo "✅ File epgtvku.xml ADA"
+            wc -l epgtvku.xml
+          else
+            echo "❌ File epgtvku.xml TIDAK ADA"
+          fi
+
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions"
