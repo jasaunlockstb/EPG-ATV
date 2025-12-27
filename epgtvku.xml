@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv>
+  <channel id='example'>
+    <display-name>Example Channel</display-name>
+  </channel>
+</tv>
